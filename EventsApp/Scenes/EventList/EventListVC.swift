@@ -10,6 +10,8 @@ import UIKit
 
 class EventListVC:UIViewController{
     
+    var eventViewModel:EventListViewModel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
@@ -20,10 +22,10 @@ class EventListVC:UIViewController{
         let rightBarButton = UIBarButtonItem(image: plusIcone, style: .plain, target: self, action: #selector(handelPlusBtnTapped))
         rightBarButton.tintColor = .plusBtn
         navigationItem.rightBarButtonItem = rightBarButton
-        self.title = "Events"
+        self.title = eventViewModel.title
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     @objc private func handelPlusBtnTapped(){
-        
+        eventViewModel.handelAddEvent()
     }
 }
