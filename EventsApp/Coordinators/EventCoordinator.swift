@@ -24,8 +24,15 @@ final class EventListCoordinator:Coordinator{
     }
     func startAddEvent(){
         let addEventCoordinator = AddEventCoordinator(navigationController: navigationController)
+        addEventCoordinator.parentCoordinator = self
         childcoordinatoors.append(addEventCoordinator)
         addEventCoordinator.start()
     }
-    
+    func childDidFinish(_ childCoordinator:Coordinator){
+        if let index = childcoordinatoors.firstIndex(where: { (coordinator) -> Bool in
+            return childCoordinator === coordinator
+        }){
+            childcoordinatoors.remove(at: index)
+        }
+    }
 }

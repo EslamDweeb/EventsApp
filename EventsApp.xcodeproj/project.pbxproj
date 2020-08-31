@@ -22,6 +22,12 @@
 		C3E668A024FBF77700CA42F5 /* EventListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E6689F24FBF77700CA42F5 /* EventListViewModel.swift */; };
 		C3E668A224FBFA3C00CA42F5 /* AddEventCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668A124FBFA3C00CA42F5 /* AddEventCoordinator.swift */; };
 		C3E668A524FBFC0F00CA42F5 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668A424FBFC0F00CA42F5 /* AddEventVC.swift */; };
+		C3E668A724FBFFF400CA42F5 /* AddEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668A624FBFFF400CA42F5 /* AddEventViewModel.swift */; };
+		C3E668A924FD36CE00CA42F5 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668A824FD36CE00CA42F5 /* UIView+Ext.swift */; };
+		C3E668AB24FD376F00CA42F5 /* VerticalStackVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668AA24FD376F00CA42F5 /* VerticalStackVIew.swift */; };
+		C3E668AD24FD37E900CA42F5 /* UILabel+UIButon+UIStackView_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668AC24FD37E900CA42F5 /* UILabel+UIButon+UIStackView_Ext.swift */; };
+		C3E668AF24FD3DE400CA42F5 /* TitleSubtitleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668AE24FD3DE400CA42F5 /* TitleSubtitleViewModel.swift */; };
+		C3E668B124FD3DF600CA42F5 /* TitleSubtitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3E668B024FD3DF600CA42F5 /* TitleSubtitleCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		C3E6689F24FBF77700CA42F5 /* EventListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewModel.swift; sourceTree = "<group>"; };
 		C3E668A124FBFA3C00CA42F5 /* AddEventCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventCoordinator.swift; sourceTree = "<group>"; };
 		C3E668A424FBFC0F00CA42F5 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
+		C3E668A624FBFFF400CA42F5 /* AddEventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventViewModel.swift; sourceTree = "<group>"; };
+		C3E668A824FD36CE00CA42F5 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		C3E668AA24FD376F00CA42F5 /* VerticalStackVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackVIew.swift; sourceTree = "<group>"; };
+		C3E668AC24FD37E900CA42F5 /* UILabel+UIButon+UIStackView_Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+UIButon+UIStackView_Ext.swift"; sourceTree = "<group>"; };
+		C3E668AE24FD3DE400CA42F5 /* TitleSubtitleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleViewModel.swift; sourceTree = "<group>"; };
+		C3E668B024FD3DF600CA42F5 /* TitleSubtitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleSubtitleCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +134,9 @@
 			children = (
 				C379AE2B24FAADC600D8D41B /* Colors.swift */,
 				C379AE3024FAB69600D8D41B /* CoreDataManger.swift */,
+				C3E668A824FD36CE00CA42F5 /* UIView+Ext.swift */,
+				C3E668AA24FD376F00CA42F5 /* VerticalStackVIew.swift */,
+				C3E668AC24FD37E900CA42F5 /* UILabel+UIButon+UIStackView_Ext.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -130,6 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				C3E668A424FBFC0F00CA42F5 /* AddEventVC.swift */,
+				C3E668A624FBFFF400CA42F5 /* AddEventViewModel.swift */,
+				C3E668AE24FD3DE400CA42F5 /* TitleSubtitleViewModel.swift */,
+				C3E668B024FD3DF600CA42F5 /* TitleSubtitleCell.swift */,
 			);
 			path = AddEvent;
 			sourceTree = "<group>";
@@ -205,16 +223,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3E668B124FD3DF600CA42F5 /* TitleSubtitleCell.swift in Sources */,
 				C379AE2524FAA52800D8D41B /* EventCoordinator.swift in Sources */,
 				C379AE3124FAB69600D8D41B /* CoreDataManger.swift in Sources */,
 				C379AE2924FAAB3C00D8D41B /* EventListVC.swift in Sources */,
+				C3E668A724FBFFF400CA42F5 /* AddEventViewModel.swift in Sources */,
+				C3E668A924FD36CE00CA42F5 /* UIView+Ext.swift in Sources */,
 				C379AE2224FAA2EA00D8D41B /* AppCoordinator.swift in Sources */,
+				C3E668AF24FD3DE400CA42F5 /* TitleSubtitleViewModel.swift in Sources */,
 				C379AE2C24FAADC600D8D41B /* Colors.swift in Sources */,
 				C379AE2F24FAB64600D8D41B /* EventsApp.xcdatamodeld in Sources */,
 				C379AE1224FAA2D500D8D41B /* ViewController.swift in Sources */,
+				C3E668AD24FD37E900CA42F5 /* UILabel+UIButon+UIStackView_Ext.swift in Sources */,
 				C3E668A024FBF77700CA42F5 /* EventListViewModel.swift in Sources */,
 				C379AE0E24FAA2D500D8D41B /* AppDelegate.swift in Sources */,
 				C3E668A224FBFA3C00CA42F5 /* AddEventCoordinator.swift in Sources */,
+				C3E668AB24FD376F00CA42F5 /* VerticalStackVIew.swift in Sources */,
 				C379AE1024FAA2D500D8D41B /* SceneDelegate.swift in Sources */,
 				C3E668A524FBFC0F00CA42F5 /* AddEventVC.swift in Sources */,
 			);

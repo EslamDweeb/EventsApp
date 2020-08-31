@@ -12,14 +12,18 @@ import UIKit
 final class AddEventCoordinator:Coordinator {
     private (set) var childcoordinatoors: [Coordinator] = []
     private let navigationController:UINavigationController
-    
+    var parentCoordinator:EventListCoordinator?
     init(navigationController:UINavigationController) {
         self.navigationController = navigationController
     }
     func start() {
         let addEventVC = AddEventVC()
+        let viewModel = AddEventViewModel()
+        viewModel.coordinator = self
+        addEventVC.addEventViewModel = viewModel
         navigationController.present(addEventVC, animated: true, completion: nil)
     }
-    
-    
+    func didFinishAddEvent(){
+        parentCoordinator?.childDidFinish(self)
+    }
 }

@@ -9,10 +9,36 @@
 import UIKit
 
 class AddEventVC:UIViewController {
+    //MARK:- UIComponent
+    lazy var tableView:UITableView = {
+       let tableView = UITableView()
+        return tableView
+    }()
+    //MARK:- Properties
+    
+    var addEventViewModel:AddEventViewModel!
+    
+    //MARK:- View Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupView()
+        addSubViews()
+        addConstraints()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        addEventViewModel.viewDidDisappear()
+    }
+    //MARK:- Helper Functions
+    private func setupView(){
         self.view.backgroundColor = .white
-        self.title = "Add Event"
+    }
+    private func addSubViews(){
+        self.view.addSubview(tableView)
+    }
+    private func addConstraints(){
+        tableView.fillSuperview()
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Coordinator {
+protocol Coordinator:class {
     var childcoordinatoors:[Coordinator] { get }
     func start()
 }
